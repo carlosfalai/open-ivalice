@@ -1,0 +1,12 @@
+[build]
+  command = ""
+  publish = "."
+
+# Optional: set proper content types for JS/CSS if needed
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
